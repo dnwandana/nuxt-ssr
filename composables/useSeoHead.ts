@@ -9,7 +9,7 @@ export default async function useSeoHead(
   const WEBSITE_DESCRIPTION =
     "Elevate your online shopping experience with Nuxt SSR Store";
   const WEBSITE_CARD_IMAGE =
-    "https://placehold.co/1280x720/EEE/31343C?font=raleway&text=Nuxt%20SSR%20Store";
+    "https://images.unsplash.com/photo-1575663620136-5ebbfcc2c597?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
   const title = `${_title} - ${WEBSITE_TITLE}`;
   const description = _description || WEBSITE_DESCRIPTION;
