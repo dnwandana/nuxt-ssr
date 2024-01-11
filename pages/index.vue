@@ -1,5 +1,7 @@
 <script setup>
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
+
+useSeoHead("Home");
 </script>
 
 <template>

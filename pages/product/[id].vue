@@ -5,6 +5,8 @@ const productId = route.params.id;
 const { data: product } = await useFetch(
   `https://fakestoreapi.com/products/${productId}`
 );
+
+useSeoHead(product.title, product.description, product.image, product.id);
 </script>
 
 <template>
