@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import { CheckOutlined } from "@ant-design/icons-vue";
 const props = defineProps({
   title: {
@@ -18,7 +18,10 @@ const props = defineProps({
     required: true,
   },
   rating: {
-    type: Object,
+    type: Object as PropType<{
+      rate: number;
+      count: number;
+    }>,
     required: true,
   },
 });

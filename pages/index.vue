@@ -1,5 +1,9 @@
-<script setup>
-const { data: products } = await useFetch("https://fakestoreapi.com/products");
+<script lang="ts" setup>
+import type { Product } from "~/types/Product";
+
+const { data: products } = await useFetch<Product[]>(
+  "https://fakestoreapi.com/products"
+);
 
 useSeoHead("Home");
 </script>
